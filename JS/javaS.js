@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // ---- ENVÍO AL BACKEND ----
             try {
                 //const res = await fetch("http://localhost:7000/api/formulario", //PARA LA BD LOCAL
-                const res = await fetch("http://54.147.237.33:7000/api/formulario", { //PARA LA BD CORRIENDO EN AWS
+                const res = await fetch("https://formularioup.duckdns.org/api/formulario",  { //PARA LA BD CORRIENDO EN AWS
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(datos)
