@@ -13,7 +13,7 @@
             <img src="/Img/logoITIIID.png" alt="Logo ITIID" width="70" height="70">
             <h1>ITIID - UPChiapas</h1>
             <nav class="main-nav">
-                <a href="/Index.html">Inicio</a>
+                <a href="/index.html">Inicio</a>
                 <a href="/Paginas/Pagina2.html">Plan de Estudios</a>
                 <a href="/Paginas/Pagina3.html" class="active">Contacto</a>
             </nav>
@@ -38,13 +38,16 @@
 
                 <div class="form-group">
                     <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required placeholder="961 123 4567">
+                    <input type="tel" id="telefono" name="telefono" required 
+                        pattern="[0-9]{10}" 
+                        title="Ingresa un número de 10 dígitos, sin espacios ni guiones"
+                        placeholder="9611234567">
                 </div>
 
                 <div class="form-group">
-                    <label for="Prepa procedencia">Preparatoria de procedencia:</label>
-                    <input type="text" id="prepa" name="prepa">
-
+                    <label for="Prepa">Preparatoria de procedencia:</label>
+                    <input type="text" id="prepa" name="prepa" required>
+                </div>
                 <div class="form-group">
                     <label for="mensaje">¿Tienes alguna duda en específico?</label>
                     <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
